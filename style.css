@@ -1,0 +1,93 @@
+*{
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #444444;
+
+}
+@font-face {
+  font-family: 'fritz';
+  src: url('fritzsanslab700-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('fritzsanslab700-webfont.svg') format('svg'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Pacifico', cursive;
+  text-transform: none;
+  font-size: 90px;
+  color: #FFFFFF;
+  font-weight: 700;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  padding: 200px
+}
+h1 span {
+  font-weight: 400;
+}
+
+.output {
+  margin-left: 20px;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #444444;
+}
+.button {
+  border: 0 none;
+  border-radius: 2px 2px 2px 2px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 7px 30px;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  width: auto;
+  /* auto */
+  text-align: center;
+  /* DELETE WHEN WIDTH AUTO */
+}
+.button.dark {
+  background: none repeat scroll 0 0 #444444;
+  color: #FFFFFF;
+}
+.button.dark:hover {
+  background: none repeat scroll 0 0 #2DB6CF;
+  color: #FFFFFF;
+}
+
+.date{
+  float:left;
+  margin-top: 10px;
+  margin-right:75px;
+  padding-bottom: 40px;
+
+}
+
+
+.artist {
+  font-size: 30px;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+
+img {
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 670px) {
+    .date {
+        padding-bottom: 0px;
+        float: none;
+    }
+}
