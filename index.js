@@ -6,8 +6,7 @@ $(function () {
             type: 'GET',
             success: function (events) {
                 get(events);
-                get(artists);
-
+                console.log(events);
             }
 
         });
@@ -17,8 +16,10 @@ $(function () {
             for (var i=0; i<events.Events.length;i++) {
               var show = events.Events[i];
               var artists = show.Artists;
+              var date = show.Date;
               for (var j=0; j<artists.length;j++){
                 var artist = artists[j];
+
 
                 $('.output').append(
 
@@ -26,10 +27,13 @@ $(function () {
                 '</div><div class="artist">' + artist.Name +
                 '</div><div class="venue"><img src="images/venue-icon.png" alt="venue-icon" width="15px" height="auto">' +
                 show.Venue.Name + '</div>' +
-                '<a href='+ show.TicketURL +'><button class="button dark center">Get Tickets</button></a>'
+                '<a href="' + show.TicketUrl + '" target="_blank"><button class="button dark center">Get Tickets</button></a>'
                 );
               }
             }
+
+
+
 
 
         }
